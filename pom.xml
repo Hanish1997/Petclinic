@@ -100,6 +100,23 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+         <distributionManagement>
+  <repository>
+    <id>maven-releases</id>
+    <!-- CHANGE HERE by your team Nexus server -->
+    <url>http://192.168.209.128:8081/repository/maven-releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>maven-snapshots</id>
+    <!-- CHANGE HERE by your team Nexus server -->
+    <url>http://192.168.209.128:8081/repository/maven-releases/</url>
+  </snapshotRepository>
+</distributionManagement>
+         <repository>
+  <id>maven-releases</id>
+  <name>maven-releases</name>
+  <url>http://192.168.209.128:8081/repository/maven-releases/</url>
+</repository>
 
     <dependencies>
         <dependency>
